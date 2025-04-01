@@ -88,7 +88,7 @@ function generateORDER(number_of_orders, MENU){
     let guest_choice = 0;
     let order = [];
     for(let i = 0; i <= number_of_orders; i++){
-        guest_choice = Math.floor(Math.random() * 8);
+        guest_choice = Math.floor(Math.random() * 7);
         order.push(MENU[guest_choice]);
     }
     return order;
