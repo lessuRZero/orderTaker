@@ -108,6 +108,7 @@ function processORDER(order){
 function takeORDER(MENU){
     let p_order = processORDER(generateORDER(10, MENU));
     const ouput = document.getElementById("output");
+    output.innerHTML = "";
     for(let i = 0; i < p_order.length; i++){
         let paragraph = document.createElement('p');
         paragraph.innerHTML = p_order[i];
